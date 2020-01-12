@@ -1,0 +1,40 @@
+/*
+ * Copyright 2019-present, Wedepohl Engineering
+ * All rights reserved.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.click-child {
+    cursor:pointer;
+}
+
+#how-to-get-here {
+    width:100%;
+}
+
+.full-width a.elementor-button-link {
+    width:100%;
+}
+
+.page-header {
+    padding-bottom:20px !important;
+}
+
+a {
+    font-weight: 700 !important;
+}
+
+input[type="checkbox"] {
+    width: 13px !important ;
+    -webkit-appearance: checkbox !important;
+}
+
+.hide-caption figcaption {
+    display:none;
+}
+
+.tab-link a {
+    text-transform:uppercase;
+}

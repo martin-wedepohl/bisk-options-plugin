@@ -1,0 +1,19 @@
+{
+    "name": "wedepohlengineering/bisk-options-plugin",
+    "description": "BISK Options Plugin",
+    "type": "project",
+    "require-dev": {},
+    "licence": "GPLv2",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "BISKPlugin\\": "./",
+            "BISKPlugin\\Includes\\": "includes/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "./"
+        ]
+    }
+}

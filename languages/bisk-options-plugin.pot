@@ -1,0 +1,57 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: BISK Options Plugin\n"
+"POT-Creation-Date: 2019-11-16 13:28-0800\n"
+"PO-Revision-Date: 2019-11-16 13:21-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x;_nx;esc_attr__;esc_attr_e;esc_attr_x;esc_html__;esc_html_e;esc_html_x;_n_noop;_nx_noop;translate_nooped_plural\n"
+"X-Poedit-SearchPath-0: bisk-options-plugin.php\n"
+"X-Poedit-SearchPath-1: includes\n"
+"X-Poedit-SearchPathExcluded-0: languages\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: src\n"
+
+#: includes/bisk-settings-page.php:58 includes/bisk-settings-page.php:76
+msgid "BISK_ADMIN_PAGE_TITLE"
+msgstr ""
+
+#: includes/bisk-settings-page.php:59
+msgid "BISK_ADMIN_MENU_TITLE"
+msgstr ""
+
+#: includes/bisk-settings-page.php:73
+msgid "You do not have sufficient permissions to access this page"
+msgstr ""
+
+#: includes/bisk-settings-page.php:83
+msgid "Plugin Version:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:103
+msgid "BISK Option 1:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:112
+msgid "Description for BISK Option 1"
+msgstr ""
+
+#: includes/bisk-settings-page.php:117
+msgid "BISK Option 2:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:126
+msgid "Description for BISK Option 2"
+msgstr ""
+
+#: includes/bisk-settings-page.php:150
+msgid "BISK OPTIONS PLUGIN SUB TITLE"
+msgstr ""
