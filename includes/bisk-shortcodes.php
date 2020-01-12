@@ -278,6 +278,133 @@ final class BISKShortCodes {
 
     }
     
+    /**
+     * Return the Junior Skills Camp dates
+     * 
+     * @example [bisk_junior_skills_camp_dates]
+     * 
+     * @return string The date for the Junior Skills Camp
+     */
+    public function junior_skills_camp_dates( ) {
+
+        do_action('bisk_before_junior_skills_camp_dates');
+       
+        $html = 'NO JUNIOR SKILLS CAMP DATES';
+        
+        $start = BISKOptions::getOption(BISKConfig::JUNIOR_SKILLS_START_DATE);
+        $end = BISKOptions::getOption(BISKConfig::JUNIOR_SKILLS_END_DATE);
+        if('' !== $start && '' !== $end) {
+            $start_ts = strtotime($start);
+            $end_ts = strtotime($end);
+            $start_str = date('F jS', $start_ts);
+            $end_str = date('F jS, Y', $end_ts);
+            $html = $start_str . ' to ' . $end_str;
+        }
+
+        do_action('bisk_after_junior_skills_camp_dates');
+        $html = apply_filters('bisk_junior_skills_camp_dates', $html);
+
+        return $html;
+
+    }
+    
+    /**
+     * Return the Summer Camp dates
+     * 
+     * @example [bisk_summer_camp_dates]
+     * 
+     * @return string The Summer Camp dates
+     */
+    public function summer_camp_dates( $atts ) {
+
+        do_action('bisk_before_summer_camp_dates');
+
+        $html = 'NO JUNIOR SKILLS CAMP DATES';
+        $atts = shortcode_atts(
+            [
+                'week' => ''
+            ], $atts, 'bisk_summer_camp_dates'
+        );
+        
+        if('' !== $atts['week']) {
+
+            switch($atts['week']) {
+                case 1:
+                    $start = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_1_START_DATE);
+                    $end = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_1_END_DATE);
+                break;
+                case 2:
+                    $start = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_2_START_DATE);
+                    $end = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_2_END_DATE);
+                break;
+                case 3:
+                    $start = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_3_START_DATE);
+                    $end = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_3_END_DATE);
+                break;
+                case 4:
+                    $start = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_4_START_DATE);
+                    $end = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_4_END_DATE);
+                break;
+                case 5:
+                    $start = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_5_START_DATE);
+                    $end = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_5_END_DATE);
+                break;
+                case 6:
+                    $start = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_6_START_DATE);
+                    $end = BISKOptions::getOption(BISKConfig::SUMMER_CAMP_6_END_DATE);
+                break;
+                default:
+                $start = '';
+                $end = '';
+        }
+
+            if('' !== $start && '' !== $end) {
+                $start_ts = strtotime($start);
+                $end_ts = strtotime($end);
+                $start_str = date('F jS', $start_ts);
+                $end_str = date('F jS, Y', $end_ts);
+                $html = '<p class="summer-camp">Week ' . $atts['week'] . ': ' . $start_str . ' to ' . $end_str . '</p>';
+            }
+        }
+
+        do_action('bisk_after_summer_camp_dates');
+        $html = apply_filters('bisk_summer_camp_dates', $html);
+
+        return $html;
+
+    }
+
+    /**
+     * Return the cost of a lesson
+     * 
+     * @example [bisk_lesson_cost lesson='basic_sea_kayaking']
+     * 
+     * @return string The cost of a lesson
+     */
+    public function lesson_cost( $atts ) {
+
+        do_action('bisk_before_lesson_cost');
+
+        $html = 'NO COST';
+        $atts = shortcode_atts(
+            [
+                'lesson' => ''
+            ], $atts, 'bisk_lesson_cost'
+        );
+        
+        if('' !== $atts['lesson']) {
+            $tour_cost = BISKOptions::getOption($atts['lesson']);
+            $html = ('' === $tour_cost) ? '0' : $tour_cost;
+        }
+        $html = '$' . $html;
+
+        do_action('bisk_after_lesson_cost');
+        $html = apply_filters('bisk_lesson_cost', $html);
+
+        return $html;
+
+    }
+    
     public static function initShortcodes() {
         // Create the shortcodes
         add_shortcode( 'bisk_opening_date', array(new BISKShortCodes, 'opening_date'));
@@ -285,6 +412,9 @@ final class BISKShortCodes {
         add_shortcode( 'bisk_round_bowen_challenge', array(new BISKShortCodes, 'round_bowen_challenge'));
         add_shortcode( 'bisk_tour_cost', array(new BISKShortCodes, 'tour_cost'));
         add_shortcode( 'bisk_full_moon_dates', array(new BISKShortCodes, 'full_moon_dates'));
+        add_shortcode( 'bisk_junior_skills_camp_dates', array(new BISKShortCodes, 'junior_skills_camp_dates'));
+        add_shortcode( 'bisk_summer_camp_dates', array(new BISKShortCodes, 'summer_camp_dates'));
+        add_shortcode( 'bisk_lesson_cost', array(new BISKShortCodes, 'lesson_cost'));
     }
     
 } // class WEOP_Shortcodes

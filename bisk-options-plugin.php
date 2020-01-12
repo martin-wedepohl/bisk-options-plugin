@@ -7,7 +7,7 @@
  * types and shortcodes required by the BISK website.
  * Author: Martin Wedepohl <martin@wedepohlengineering.com>
  * Author URI: https://wedepohlengineering.com
- * Version: 0.1.0
+ * Version: 0.1.1
  * Text Domain: bisk-options-plugin
  */
 /*

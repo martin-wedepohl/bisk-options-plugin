@@ -214,6 +214,188 @@ class BISKSettingsPage {
                     'description' => esc_html__('Full Moon dates for the season', BISKConfig::TEXT_DOMAIN)
                 )
         );
+        add_settings_field(
+            BISKConfig::JUNIOR_SKILLS_START_DATE,
+            esc_html__('Junior Skills Camp Start Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::JUNIOR_SKILLS_START_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::JUNIOR_SKILLS_START_DATE . ']',
+                'id' => BISKConfig::JUNIOR_SKILLS_START_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::JUNIOR_SKILLS_END_DATE,
+            esc_html__('Junior Skills Camp End Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::JUNIOR_SKILLS_END_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::JUNIOR_SKILLS_END_DATE . ']',
+                'id' => BISKConfig::JUNIOR_SKILLS_END_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_1_START_DATE,
+            esc_html__('Summer Camp #1 Start Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_1_START_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_1_START_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_1_START_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_1_END_DATE,
+            esc_html__('Summer Camp #1 End Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_1_END_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_1_END_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_1_END_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_2_START_DATE,
+            esc_html__('Summer Camp #2 Start Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_2_START_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_2_START_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_2_START_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_2_END_DATE,
+            esc_html__('Summer Camp #2 End Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_2_END_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_2_END_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_2_END_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_3_START_DATE,
+            esc_html__('Summer Camp #3 Start Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_3_START_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_3_START_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_3_START_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_3_END_DATE,
+            esc_html__('Summer Camp #3 End Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_3_END_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_3_END_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_3_END_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_4_START_DATE,
+            esc_html__('Summer Camp #4 Start Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_4_START_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_4_START_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_4_START_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_4_END_DATE,
+            esc_html__('Summer Camp #4 End Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_4_END_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_4_END_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_4_END_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_5_START_DATE,
+            esc_html__('Summer Camp #5 Start Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_5_START_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_5_START_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_5_START_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_5_END_DATE,
+            esc_html__('Summer Camp #5 End Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_5_END_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_5_END_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_5_END_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_6_START_DATE,
+            esc_html__('Summer Camp #6 Start Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_6_START_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_6_START_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_6_START_DATE
+            )
+        );
+        add_settings_field(
+            BISKConfig::SUMMER_CAMP_6_END_DATE,
+            esc_html__('Summer Camp #6 End Date:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_DATE_ID,
+            array(
+                'classes' => 'bisk_date',
+                'value' => BISKOptions::getOption(BISKConfig::SUMMER_CAMP_6_END_DATE),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SUMMER_CAMP_6_END_DATE . ']',
+                'id' => BISKConfig::SUMMER_CAMP_6_END_DATE
+            )
+        );
         add_settings_section(
                 BISKConfig::ADMIN_COST_ID,
                 null,
@@ -361,8 +543,7 @@ class BISKSettingsPage {
                 'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::LITTLE_PADDLERS_PARTY . ']',
                 'id' => BISKConfig::LITTLE_PADDLERS_PARTY,
                 'min' => '0',
-                'max' => '5000',
-                'description' => 'Cost for the Little Paddlers Party'
+                'max' => '5000'
             )
         );
         
@@ -379,7 +560,7 @@ class BISKSettingsPage {
                 'id' => BISKConfig::LITTLE_PADDLERS_ADDITIONAL,
                 'min' => '0',
                 'max' => '5000',
-                'description' => 'Cost for the Little Paddlers Party Additional Guests'
+                'description' => esc_html('Cost for the Little Paddlers Party Additional Guests', BISKConfig::TEXT_DOMAIN)
             )
         );
         
@@ -395,8 +576,7 @@ class BISKSettingsPage {
                 'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::TEEN_PADDLERS_PARTY . ']',
                 'id' => BISKConfig::TEEN_PADDLERS_PARTY,
                 'min' => '0',
-                'max' => '5000',
-                'description' => 'Cost for the Teen Paddlers Party'
+                'max' => '5000'
             )
         );
         
@@ -413,7 +593,7 @@ class BISKSettingsPage {
                 'id' => BISKConfig::TEEN_PADDLERS_ADDITIONAL,
                 'min' => '0',
                 'max' => '5000',
-                'description' => 'Cost for the Teen Paddlers Party Additional Guests'
+                'description' => esc_html('Cost for the Teen Paddlers Party Additional Guests', BISKConfig::TEXT_DOMAIN)
             )
         );
         
@@ -429,8 +609,7 @@ class BISKSettingsPage {
                 'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::ADULT_PADDLERS_PARTY . ']',
                 'id' => BISKConfig::ADULT_PADDLERS_PARTY,
                 'min' => '0',
-                'max' => '5000',
-                'description' => 'Cost for the Adult Paddlers Party'
+                'max' => '5000'
             )
         );
         
@@ -447,7 +626,135 @@ class BISKSettingsPage {
                 'id' => BISKConfig::ADULT_PADDLERS_ADDITIONAL,
                 'min' => '0',
                 'max' => '5000',
-                'description' => 'Cost for the Adult Paddlers Party Additional Guests'
+                'description' => esc_html('Cost for the Adult Paddlers Party Additional Guests', BISKConfig::TEXT_DOMAIN)
+            )
+        );
+        
+        add_settings_field(
+            BISKConfig::BASIC_SEA_KAYAKING_COST,
+            esc_html__('Basic Sea Kayaking Cost ($):', BISKConfig::TEXT_DOMAIN),
+            [$this, 'numberField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_COST_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::BASIC_SEA_KAYAKING_COST),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::BASIC_SEA_KAYAKING_COST . ']',
+                'id' => BISKConfig::BASIC_SEA_KAYAKING_COST,
+                'min' => '0',
+                'max' => '5000'
+            )
+        );
+        
+        add_settings_field(
+            BISKConfig::INTRO_TO_STROKES_COST,
+            esc_html__('Intro to Strokes Cost ($):', BISKConfig::TEXT_DOMAIN),
+            [$this, 'numberField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_COST_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::INTRO_TO_STROKES_COST),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::INTRO_TO_STROKES_COST . ']',
+                'id' => BISKConfig::INTRO_TO_STROKES_COST,
+                'min' => '0',
+                'max' => '5000'
+            )
+        );
+        
+        add_settings_field(
+            BISKConfig::CAPSIZE_RECOVERY_COST,
+            esc_html__('Capsize Recovery Cost ($):', BISKConfig::TEXT_DOMAIN),
+            [$this, 'numberField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_COST_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::CAPSIZE_RECOVERY_COST),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::CAPSIZE_RECOVERY_COST . ']',
+                'id' => BISKConfig::CAPSIZE_RECOVERY_COST,
+                'min' => '0',
+                'max' => '5000'
+            )
+        );
+        
+        add_settings_field(
+            BISKConfig::STAND_UP_PADDLE_BOARD_COST,
+            esc_html__('Stand Up Paddle Board Cost ($):', BISKConfig::TEXT_DOMAIN),
+            [$this, 'numberField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_COST_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::STAND_UP_PADDLE_BOARD_COST),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::STAND_UP_PADDLE_BOARD_COST . ']',
+                'id' => BISKConfig::STAND_UP_PADDLE_BOARD_COST,
+                'min' => '0',
+                'max' => '5000'
+            )
+        );
+        
+        add_settings_field(
+            BISKConfig::JUNIOR_SKILLS_CAMP_COST,
+            esc_html__('Junior Skills Camp Cost ($):', BISKConfig::TEXT_DOMAIN),
+            [$this, 'numberField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_COST_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::JUNIOR_SKILLS_CAMP_COST),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::JUNIOR_SKILLS_CAMP_COST . ']',
+                'id' => BISKConfig::JUNIOR_SKILLS_CAMP_COST,
+                'min' => '0',
+                'max' => '5000'
+            )
+        );
+        
+        add_settings_field(
+            BISKConfig::KIDS_SUMMER_CAMPS_COST,
+            esc_html__('Kids Summer Camp Cost ($):', BISKConfig::TEXT_DOMAIN),
+            [$this, 'numberField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_COST_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::KIDS_SUMMER_CAMPS_COST),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::KIDS_SUMMER_CAMPS_COST . ']',
+                'id' => BISKConfig::KIDS_SUMMER_CAMPS_COST,
+                'min' => '0',
+                'max' => '5000'
+            )
+        );
+        
+        add_settings_field(
+            BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST,
+            esc_html__('Sea Kayak Basic Skills Cost ($):', BISKConfig::TEXT_DOMAIN),
+            [$this, 'numberField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_COST_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST . ']',
+                'id' => BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST,
+                'min' => '0',
+                'max' => '5000'
+            )
+        );
+        
+        add_settings_field(
+            BISKConfig::SEA_KAYAK_LEVEL_1_COST,
+            esc_html__('Sea Kayak Level 1 Cost ($):', BISKConfig::TEXT_DOMAIN),
+            [$this, 'numberField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_COST_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::SEA_KAYAK_LEVEL_1_COST),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::SEA_KAYAK_LEVEL_1_COST . ']',
+                'id' => BISKConfig::SEA_KAYAK_LEVEL_1_COST,
+                'min' => '0',
+                'max' => '5000'
             )
         );
         
@@ -483,8 +790,7 @@ class BISKSettingsPage {
                     'classes' => 'bisk_date',
                     'value' => BISKOptions::getOption(BISKConfig::ROUND_BOWEN_CHALLENGE_DATE),
                     'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::ROUND_BOWEN_CHALLENGE_DATE . ']',
-                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_DATE,
-                    'description' => esc_html__('Date for the Round Bowen Challenge', BISKConfig::TEXT_DOMAIN)
+                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_DATE
                 )
         );
 
@@ -498,8 +804,7 @@ class BISKSettingsPage {
                     'classes' => '',
                     'value' => BISKOptions::getOption(BISKConfig::ROUND_BOWEN_CHALLENGE_REGULAR_PRICE),
                     'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::ROUND_BOWEN_CHALLENGE_REGULAR_PRICE . ']',
-                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_REGULAR_PRICE,
-                    'description' => esc_html__('Price for the Round Bowen Challenge ($)', BISKConfig::TEXT_DOMAIN)
+                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_REGULAR_PRICE
                 )
         );
 
@@ -513,8 +818,7 @@ class BISKSettingsPage {
                     'classes' => 'bisk_date',
                     'value' => BISKOptions::getOption(BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_DATE),
                     'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_DATE . ']',
-                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_DATE,
-                    'description' => esc_html__('Date for the end of the early bird Round Bowen Challenge price', BISKConfig::TEXT_DOMAIN)
+                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_DATE
                 )
         );
 
@@ -528,8 +832,7 @@ class BISKSettingsPage {
                     'classes' => '',
                     'value' => BISKOptions::getOption(BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_PRICE),
                     'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_PRICE . ']',
-                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_PRICE,
-                    'description' => esc_html__('Price for the early bird registration for the Round Bowen Challenge ($)', BISKConfig::TEXT_DOMAIN)
+                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_PRICE
                 )
         );
 
@@ -543,8 +846,7 @@ class BISKSettingsPage {
                     'classes' => 'bisk_date',
                     'value' => BISKOptions::getOption(BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_DATE),
                     'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_DATE . ']',
-                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_DATE,
-                    'description' => esc_html__('Date for the start of the late registration Round Bowen Challenge price', BISKConfig::TEXT_DOMAIN)
+                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_DATE
                 )
         );
 
@@ -558,8 +860,7 @@ class BISKSettingsPage {
                     'classes' => '',
                     'value' => BISKOptions::getOption(BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_PRICE),
                     'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_PRICE . ']',
-                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_PRICE,
-                    'description' => esc_html__('Price for the late registration for the Round Bowen Challenge ($)', BISKConfig::TEXT_DOMAIN)
+                    'id' => BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_PRICE
                 )
         );
 
@@ -573,7 +874,7 @@ class BISKSettingsPage {
         $checked = ('' === BISKOptions::getOption(BISKConfig::BISK_DEBUG)) ? '' : 'checked';
         add_settings_field(
                 BISKConfig::BISK_DEBUG,
-                esc_html__('Opening Date:', BISKConfig::TEXT_DOMAIN),
+                esc_html__('Enable Debug:', BISKConfig::TEXT_DOMAIN),
                 [$this, 'checkboxField'],
                 BISKConfig::ADMIN_MENU_SLUG,
                 BISKConfig::ADMIN_DEBUG_ID,

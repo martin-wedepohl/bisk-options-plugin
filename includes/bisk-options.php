@@ -38,6 +38,20 @@ class BISKOptions {
                 BISKConfig::OPENING_DATE => '',
                 BISKConfig::CLOSING_DATE => '',
                 BISKConfig::FULL_MOON_DATES => '',
+                BISKConfig::JUNIOR_SKILLS_START_DATE => '',
+                BISKConfig::JUNIOR_SKILLS_END_DATE => '',
+                BISKConfig::SUMMER_CAMP_1_START_DATE => '',
+                BISKConfig::SUMMER_CAMP_1_END_DATE => '',
+                BISKConfig::SUMMER_CAMP_2_START_DATE => '',
+                BISKConfig::SUMMER_CAMP_2_END_DATE => '',
+                BISKConfig::SUMMER_CAMP_3_START_DATE => '',
+                BISKConfig::SUMMER_CAMP_3_END_DATE => '',
+                BISKConfig::SUMMER_CAMP_4_START_DATE => '',
+                BISKConfig::SUMMER_CAMP_4_END_DATE => '',
+                BISKConfig::SUMMER_CAMP_5_START_DATE => '',
+                BISKConfig::SUMMER_CAMP_5_END_DATE => '',
+                BISKConfig::SUMMER_CAMP_6_START_DATE => '',
+                BISKConfig::SUMMER_CAMP_6_END_DATE => '',
                 BISKConfig::SHORE_LINE_TOUR_COST => '',
                 BISKConfig::FULL_MOON_TOUR_COST => '',
                 BISKConfig::SUNSET_TOUR_COST => '',
@@ -52,6 +66,14 @@ class BISKOptions {
                 BISKConfig::TEEN_PADDLERS_ADDITIONAL => '',
                 BISKConfig::ADULT_PADDLERS_PARTY => '',
                 BISKConfig::ADULT_PADDLERS_ADDITIONAL => '',
+                BISKConfig::BASIC_SEA_KAYAKING_COST => '',
+                BISKConfig::INTRO_TO_STROKES_COST => '',
+                BISKConfig::CAPSIZE_RECOVERY_COST => '',
+                BISKConfig::STAND_UP_PADDLE_BOARD_COST => '',
+                BISKConfig::JUNIOR_SKILLS_CAMP_COST => '',
+                BISKConfig::KIDS_SUMMER_CAMPS_COST => '',
+                BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST => '',
+                BISKConfig::SEA_KAYAK_LEVEL_1_COST => '',
                 BISKConfig::ROUND_BOWEN_CHALLENGE_NUMBER => '',
                 BISKConfig::ROUND_BOWEN_CHALLENGE_DATE => '',
                 BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_DATE => '',
@@ -68,6 +90,20 @@ class BISKOptions {
         self::$options[BISKConfig::OPENING_DATE] = esc_js(self::$options[BISKConfig::OPENING_DATE]);
         self::$options[BISKConfig::CLOSING_DATE] = esc_js(self::$options[BISKConfig::CLOSING_DATE]);
         self::$options[BISKConfig::FULL_MOON_DATES] = esc_js(self::$options[BISKConfig::FULL_MOON_DATES]);
+        self::$options[BISKConfig::JUNIOR_SKILLS_START_DATE] = esc_js(self::$options[BISKConfig::JUNIOR_SKILLS_START_DATE]);
+        self::$options[BISKConfig::JUNIOR_SKILLS_END_DATE] = esc_js(self::$options[BISKConfig::JUNIOR_SKILLS_END_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_1_START_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_1_START_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_1_END_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_1_END_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_2_START_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_2_START_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_2_END_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_2_END_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_3_START_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_3_START_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_3_END_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_3_END_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_4_START_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_4_START_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_4_END_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_4_END_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_5_START_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_5_START_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_5_END_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_5_END_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_6_START_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_6_START_DATE]);
+        self::$options[BISKConfig::SUMMER_CAMP_6_END_DATE] = esc_js(self::$options[BISKConfig::SUMMER_CAMP_6_END_DATE]);
         self::$options[BISKConfig::SHORE_LINE_TOUR_COST] = esc_js(self::$options[BISKConfig::SHORE_LINE_TOUR_COST]);
         self::$options[BISKConfig::FULL_MOON_TOUR_COST] = esc_js(self::$options[BISKConfig::FULL_MOON_TOUR_COST]);
         self::$options[BISKConfig::SUNSET_TOUR_COST] = esc_js(self::$options[BISKConfig::SUNSET_TOUR_COST]);
@@ -82,7 +118,15 @@ class BISKOptions {
         self::$options[BISKConfig::TEEN_PADDLERS_ADDITIONAL] = esc_js(self::$options[BISKConfig::TEEN_PADDLERS_ADDITIONAL]);
         self::$options[BISKConfig::ADULT_PADDLERS_PARTY] = esc_js(self::$options[BISKConfig::ADULT_PADDLERS_PARTY]);
         self::$options[BISKConfig::ADULT_PADDLERS_ADDITIONAL] = esc_js(self::$options[BISKConfig::ADULT_PADDLERS_ADDITIONAL]);
-        self::$options[BISKConfig::BISK_DEBUG] = esc_js(self::$options[BISKConfig::BISK_DEBUG]);
+        self::$options[BISKConfig::BASIC_SEA_KAYAKING_COST] = esc_js(self::$options[BISKConfig::BASIC_SEA_KAYAKING_COST]);
+        self::$options[BISKConfig::INTRO_TO_STROKES_COST] = esc_js(self::$options[BISKConfig::INTRO_TO_STROKES_COST]);
+        self::$options[BISKConfig::CAPSIZE_RECOVERY_COST] = esc_js(self::$options[BISKConfig::CAPSIZE_RECOVERY_COST]);
+        self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_COST] = esc_js(self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_COST]);
+        self::$options[BISKConfig::JUNIOR_SKILLS_CAMP_COST] = esc_js(self::$options[BISKConfig::JUNIOR_SKILLS_CAMP_COST]);
+        self::$options[BISKConfig::KIDS_SUMMER_CAMPS_COST] = esc_js(self::$options[BISKConfig::KIDS_SUMMER_CAMPS_COST]);
+        self::$options[BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST] = esc_js(self::$options[BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST]);
+        self::$options[BISKConfig::SEA_KAYAK_LEVEL_1_COST] = esc_js(self::$options[BISKConfig::SEA_KAYAK_LEVEL_1_COST]);
+        self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_COST] = esc_js(self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_COST]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_NUMBER] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_NUMBER]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_DATE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_DATE]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_DATE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_DATE]);
@@ -90,6 +134,7 @@ class BISKOptions {
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_REGULAR_PRICE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_REGULAR_PRICE]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_PRICE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_PRICE]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_PRICE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_PRICE]);
+        self::$options[BISKConfig::BISK_DEBUG] = esc_js(self::$options[BISKConfig::BISK_DEBUG]);
     }
 
     /**
