@@ -25,7 +25,7 @@ defined('ABSPATH') or die;
  */
 class BISKConfig {
 
-    const PLUGIN_VERSION                 = '0.1.1';
+    const PLUGIN_VERSION                 = '0.1.2';
     const TEXT_DOMAIN                    = 'bisk-options-plugin';
 
     const ADMIN_CAPABILITY               = 'manage_options';
@@ -55,28 +55,29 @@ class BISKConfig {
     const SUMMER_CAMP_6_START_DATE       = 'summer_camp_6_start_date';
     const SUMMER_CAMP_6_END_DATE         = 'summer_camp_6_end_date';
 
-    const SHORE_LINE_TOUR_COST           = 'shore_line_tour_cost';
-    const FULL_MOON_TOUR_COST            = 'full_moon_tour_cost';
-    const SUNSET_TOUR_COST               = 'sunset_tour_cost';
-    const PASLEY_ISLAND_TOUR_COST        = 'pasley_island_tour_cost';
-    const HALF_ISLAND_TOUR_COST          = 'half_island_tour_cost';
-    const HOWE_SOUND_TOUR_TWO_DAY_COST   = 'howe_sound_tour_two_day_cost';
-    const HOWE_SOUND_TOUR_THREE_DAY_COST = 'howe_sound_tour_three_day_cost';
-    const HOWE_SOUND_TOUR_FOUR_DAY_COST  = 'howe_sound_tour_four_day_cost';
-    const LITTLE_PADDLERS_PARTY          = 'little_paddlers_party';
-    const LITTLE_PADDLERS_ADDITIONAL     = 'little_paddlers_additional';
-    const TEEN_PADDLERS_PARTY            = 'teen_paddlers_party';
-    const TEEN_PADDLERS_ADDITIONAL       = 'teen_paddlers_additional';
-    const ADULT_PADDLERS_PARTY           = 'adult_paddlers_party';
-    const ADULT_PADDLERS_ADDITIONAL      = 'adult_paddlers_additional';
-    const BASIC_SEA_KAYAKING_COST        = 'basic_sea_kayaking_cost';
-    const INTRO_TO_STROKES_COST          = 'intro_to_strokes_cost';
-    const CAPSIZE_RECOVERY_COST          = 'capsize_recovery_cost';
-    const STAND_UP_PADDLE_BOARD_COST     = 'stand_up_paddle_board_cost';
-    const JUNIOR_SKILLS_CAMP_COST        = 'junior_skills_camp_cost';
-    const KIDS_SUMMER_CAMPS_COST         = 'kids_summer_camps_cost';
-    const SEA_KAYAK_BASIC_SKILLS_COST    = 'sea_kayak_basic_skills_cost';
-    const SEA_KAYAK_LEVEL_1_COST         = 'sea_kayak_level_1_cost';
+    const SHORE_LINE_TOUR_COST            = 'shore_line_tour_cost';
+    const FULL_MOON_TOUR_COST             = 'full_moon_tour_cost';
+    const SUNSET_TOUR_COST                = 'sunset_tour_cost';
+    const PASLEY_ISLAND_TOUR_COST         = 'pasley_island_tour_cost';
+    const HALF_ISLAND_TOUR_COST           = 'half_island_tour_cost';
+    const HOWE_SOUND_TOUR_TWO_DAY_COST    = 'howe_sound_tour_two_day_cost';
+    const HOWE_SOUND_TOUR_THREE_DAY_COST  = 'howe_sound_tour_three_day_cost';
+    const HOWE_SOUND_TOUR_FOUR_DAY_COST   = 'howe_sound_tour_four_day_cost';
+    const LITTLE_PADDLERS_PARTY           = 'little_paddlers_party';
+    const LITTLE_PADDLERS_ADDITIONAL      = 'little_paddlers_additional';
+    const TEEN_PADDLERS_PARTY             = 'teen_paddlers_party';
+    const TEEN_PADDLERS_ADDITIONAL        = 'teen_paddlers_additional';
+    const ADULT_PADDLERS_PARTY            = 'adult_paddlers_party';
+    const ADULT_PADDLERS_ADDITIONAL       = 'adult_paddlers_additional';
+    const BASIC_SEA_KAYAKING_COST         = 'basic_sea_kayaking_cost';
+    const INTRO_TO_STROKES_COST           = 'intro_to_strokes_cost';
+    const CAPSIZE_RECOVERY_COST           = 'capsize_recovery_cost';
+    const STAND_UP_PADDLE_BOARD_COST      = 'stand_up_paddle_board_cost';
+    const STAND_UP_PADDLE_BOARD_YOGA_COST = 'stand_up_paddle_board_yoga_cost';
+    const JUNIOR_SKILLS_CAMP_COST         = 'junior_skills_camp_cost';
+    const KIDS_SUMMER_CAMPS_COST          = 'kids_summer_camps_cost';
+    const SEA_KAYAK_BASIC_SKILLS_COST     = 'sea_kayak_basic_skills_cost';
+    const SEA_KAYAK_LEVEL_1_COST          = 'sea_kayak_level_1_cost';
     
     const ROUND_BOWEN_CHALLENGE_NUMBER           = 'round_bowen_challenge_number';
     const ROUND_BOWEN_CHALLENGE_DATE             = 'round_bowen_challenge_date';

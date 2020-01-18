@@ -695,6 +695,22 @@ class BISKSettingsPage {
         );
         
         add_settings_field(
+            BISKConfig::STAND_UP_PADDLE_BOARD_YOGA_COST,
+            esc_html__('Stand Up Paddle Board Yogsa per hour Cost ($):', BISKConfig::TEXT_DOMAIN),
+            [$this, 'numberField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_COST_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::STAND_UP_PADDLE_BOARD_YOGA_COST),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::STAND_UP_PADDLE_BOARD_YOGA_COST . ']',
+                'id' => BISKConfig::STAND_UP_PADDLE_BOARD_YOGA_COST,
+                'min' => '0',
+                'max' => '5000'
+            )
+        );
+        
+        add_settings_field(
             BISKConfig::JUNIOR_SKILLS_CAMP_COST,
             esc_html__('Junior Skills Camp Cost ($):', BISKConfig::TEXT_DOMAIN),
             [$this, 'numberField'],

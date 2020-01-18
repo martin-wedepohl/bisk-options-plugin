@@ -70,6 +70,7 @@ class BISKOptions {
                 BISKConfig::INTRO_TO_STROKES_COST => '',
                 BISKConfig::CAPSIZE_RECOVERY_COST => '',
                 BISKConfig::STAND_UP_PADDLE_BOARD_COST => '',
+                BISKConfig::STAND_UP_PADDLE_BOARD_YOGA_COST => '',
                 BISKConfig::JUNIOR_SKILLS_CAMP_COST => '',
                 BISKConfig::KIDS_SUMMER_CAMPS_COST => '',
                 BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST => '',
@@ -122,11 +123,11 @@ class BISKOptions {
         self::$options[BISKConfig::INTRO_TO_STROKES_COST] = esc_js(self::$options[BISKConfig::INTRO_TO_STROKES_COST]);
         self::$options[BISKConfig::CAPSIZE_RECOVERY_COST] = esc_js(self::$options[BISKConfig::CAPSIZE_RECOVERY_COST]);
         self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_COST] = esc_js(self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_COST]);
+        self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_YOGA_COST] = esc_js(self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_YOGA_COST]);
         self::$options[BISKConfig::JUNIOR_SKILLS_CAMP_COST] = esc_js(self::$options[BISKConfig::JUNIOR_SKILLS_CAMP_COST]);
         self::$options[BISKConfig::KIDS_SUMMER_CAMPS_COST] = esc_js(self::$options[BISKConfig::KIDS_SUMMER_CAMPS_COST]);
         self::$options[BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST] = esc_js(self::$options[BISKConfig::SEA_KAYAK_BASIC_SKILLS_COST]);
         self::$options[BISKConfig::SEA_KAYAK_LEVEL_1_COST] = esc_js(self::$options[BISKConfig::SEA_KAYAK_LEVEL_1_COST]);
-        self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_COST] = esc_js(self::$options[BISKConfig::STAND_UP_PADDLE_BOARD_COST]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_NUMBER] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_NUMBER]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_DATE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_DATE]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_DATE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_DATE]);

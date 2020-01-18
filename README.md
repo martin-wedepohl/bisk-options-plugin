@@ -30,8 +30,12 @@ If you get struck, or have any questions, you can email Martin Wedepohl <martin@
 Of course! This plugin is open sourced on Martin Wedepohl GitHub. You can find the code and contribution instructions at https://github.com/martin-wedepohl/bisk-options-plugin.
 
 == Changelog ==
+= 2020-01-18 version 0.1.2 =
+* Added Stand Up Paddle Board Cost
+
+== Changelog ==
 = 2020-01-11 version 0.1.1 =
-* Added options for lessons *
+* Added options for lessons
 
 = 2020-01-11 version 0.1.0 =
-* original issue *
+* original issue
