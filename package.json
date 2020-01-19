@@ -1,6 +1,6 @@
 {
     "name": "bisk-options-plugin",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "BISK Options Plugin",
     "author": "Martin Wedepohl <martin@wedepohlengineering.com> (http://wedepohlengineering.com)",
     "repository": {
@@ -19,7 +19,6 @@
         "acorn": "^6.0.0",
         "autoprefixer": "^9.6.1",
         "babelify": "^10.0.0",
-        "browser-sync": "^2.24.4",
         "browserify": "^16.2.3",
         "browserify-shim": "^3.8.14",
         "browserlist": "^1.0.1",

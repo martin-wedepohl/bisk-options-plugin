@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BISK Options Plugin\n"
-"POT-Creation-Date: 2019-11-16 13:28-0800\n"
+"POT-Creation-Date: 2020-01-18 23:26-0800\n"
 "PO-Revision-Date: 2019-11-16 13:21-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,38 +20,556 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
 "X-Poedit-SearchPathExcluded-2: src\n"
 
-#: includes/bisk-settings-page.php:58 includes/bisk-settings-page.php:76
-msgid "BISK_ADMIN_PAGE_TITLE"
+#: includes/bisk-settings-page.php:51 includes/bisk-settings-page.php:62
+#: includes/bisk-settings-page.php:118 includes/bisk-settings-page.php:136
+msgid "BISK Plugin Options"
 msgstr ""
 
-#: includes/bisk-settings-page.php:59
-msgid "BISK_ADMIN_MENU_TITLE"
+#: includes/bisk-settings-page.php:52
+msgid "BISK Options"
 msgstr ""
 
-#: includes/bisk-settings-page.php:73
+#: includes/bisk-settings-page.php:63
+msgid "Options"
+msgstr ""
+
+#: includes/bisk-settings-page.php:71
+msgid "BISK Plugin Information"
+msgstr ""
+
+#: includes/bisk-settings-page.php:72
+msgid "Information"
+msgstr ""
+
+#: includes/bisk-settings-page.php:115
 msgid "You do not have sufficient permissions to access this page"
 msgstr ""
 
-#: includes/bisk-settings-page.php:83
+#: includes/bisk-settings-page.php:126
 msgid "Plugin Version:"
 msgstr ""
 
-#: includes/bisk-settings-page.php:103
-msgid "BISK Option 1:"
+#: includes/bisk-settings-page.php:137 includes/bisk-settings-page.php:1142
+msgid "BISK Date Options"
 msgstr ""
 
-#: includes/bisk-settings-page.php:112
-msgid "Description for BISK Option 1"
+#: includes/bisk-settings-page.php:139
+msgid "Opening Date - Date of the season opening"
 msgstr ""
 
-#: includes/bisk-settings-page.php:117
-msgid "BISK Option 2:"
+#: includes/bisk-settings-page.php:140
+msgid "Closing Date - Date of the season closing"
 msgstr ""
 
-#: includes/bisk-settings-page.php:126
-msgid "Description for BISK Option 2"
+#: includes/bisk-settings-page.php:141
+msgid "Full Moon Dates - List of the full moon dates for the full moon three hour tour"
+msgstr ""
+
+#: includes/bisk-settings-page.php:142
+msgid "Junior Skills Camp Start Date - Date of the start of the Junior Skills Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:143
+msgid "Junior Skills Camp End Date - Date of the end of the Junior Skills Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:144
+msgid "Summer Camp #1 Start Date - Date of the start of the 1st Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:145
+msgid "Summer Camp #1 End Date - Date of the end of the 1st Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:146
+msgid "Summer Camp #2 Start Date - Date of the start of the 2nd Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:147
+msgid "Summer Camp #2 End Date - Date of the end of the 2nd Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:148
+msgid "Summer Camp #3 Start Date - Date of the start of the 3rd Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:149
+msgid "Summer Camp #3 End Date - Date of the end of the 3rd Summer Camp"
 msgstr ""
 
 #: includes/bisk-settings-page.php:150
-msgid "BISK OPTIONS PLUGIN SUB TITLE"
+msgid "Summer Camp #4 Start Date - Date of the start of the 4th Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:151
+msgid "Summer Camp #4 End Date - Date of the end of the 4th Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:152
+msgid "Summer Camp #5 Start Date - Date of the start of the 5th Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:153
+msgid "Summer Camp #5 End Date - Date of the end of the 5th Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:154
+msgid "Summer Camp #6 Start Date - Date of the start of the 6th Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:155
+msgid "Summer Camp #6 End Date - Date of the end of the 6th Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:157 includes/bisk-settings-page.php:1149
+msgid "BISK Price Options"
+msgstr ""
+
+#: includes/bisk-settings-page.php:159
+msgid "Shore Line Tour Cost - Cost of the Shore Line Tour in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:160
+msgid "Full Moon Tour Cost - Cost of the Full Moon Tour in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:161
+msgid "Sunset Tour Cost - Cost of the Sunset Tour in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:162
+msgid "Pasley Island Tour Cost - Cost of the Pasley Island Tour in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:163
+msgid "Half Island Tour Cost - Cost of the Half Island Tour in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:164
+msgid "Howe Sound 2 Day Tour Cost - Cost of the Howe Sound 2 Day Tour in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:165
+msgid "Howe Sound 3 Day Tour Cost - Cost of the Howe Sound 3 Day Tour in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:166
+msgid "Howe Sound 4 Day Tour Cost - Cost of the Howe Sound 4 Day Tour in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:167
+msgid "Little Paddlers Party - Cost of the Little Paddlers Party in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:168
+msgid "Little Paddlers Additional - Cost of the Little Paddlers Additional Party Guests in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:169
+msgid "Teen Paddlers Party - Cost of the Teen Paddlers Party in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:170
+msgid "Teen Paddlers Additional - Cost of the Teen Paddlers Additional Party Guests in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:171
+msgid "Adult Paddlers Party - Cost of the Adult Paddlers Party in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:172
+msgid "Adult Paddlers Additional - Cost of the Adult Paddlers Additional Party Guests in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:173
+msgid "Basic Sea Kayaking Cost - Cost of the Basic Sea Kayaking Lesson in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:174
+msgid "Intro to Strokes Cost - Cost of the Intro to Strokes Lesson in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:175
+msgid "Capsize Recovery Cost - Cost of the Capsize Recovery Lesson in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:176
+msgid "Stand Up Paddle Board Cost - Cost of the Stand Up Paddle Board Lesson in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:177
+msgid "Stand Up Paddle Board Yoga per hour Cost - Cost of the Stand Up Paddle Board Yoga Lesson in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:178
+msgid "Junior Skills Camp Cost - Cost of the Junior Skills Camp Lesson in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:179
+msgid "Kids Summer Camp Cost - Cost of the Kids Summer Camp Lesson in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:180
+msgid "Sea Kayak Basic Skills Cost - Cost of the Sea Kayak Basic Skills Lesson in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:182 includes/bisk-settings-page.php:1156
+msgid "BISK Round Bowen Challenge Options"
+msgstr ""
+
+#: includes/bisk-settings-page.php:184
+msgid "Annual Round Bowen Challenge Number - Number for the Annual Round Bowen Challenge"
+msgstr ""
+
+#: includes/bisk-settings-page.php:185
+msgid "Round Bowen Challenge Date - Date of the Round Bowen Challenge"
+msgstr ""
+
+#: includes/bisk-settings-page.php:186
+msgid "Round Bowen Challenge Regular Price - Regular cost of the Round Bowen Challeng in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:187
+msgid "Round Bowen Challenge Early Bird Date - Early bird date for tickets in the Round Bowen Challenge"
+msgstr ""
+
+#: includes/bisk-settings-page.php:188
+msgid "Round Bowen Challenge Early Bird Price - Early bird cost of the Round Bowen Challeng in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:189
+msgid "Round Bowen Challenge Late Registration Date - Late date for tickets in the Round Bowen Challenge"
+msgstr ""
+
+#: includes/bisk-settings-page.php:190
+msgid "Round Bowen Challenge Late Price - Late cost of the Round Bowen Challeng in dollars"
+msgstr ""
+
+#: includes/bisk-settings-page.php:192 includes/bisk-settings-page.php:1163
+msgid "BISK Closed for Season Notification Message"
+msgstr ""
+
+#: includes/bisk-settings-page.php:194
+msgid "Show Closed Notification - Display the season closed message"
+msgstr ""
+
+#: includes/bisk-settings-page.php:195
+msgid "Closed Notification Header - H3 tag message"
+msgstr ""
+
+#: includes/bisk-settings-page.php:196
+msgid "Closed Notification to be displayed on the top of the page - Message to be displayed for the closed notification"
+msgstr ""
+
+#: includes/bisk-settings-page.php:198 includes/bisk-settings-page.php:1170
+msgid "BISK Debug Options"
+msgstr ""
+
+#: includes/bisk-settings-page.php:200
+msgid "Enagle Debug - If checked enable debug logging/messages"
+msgstr ""
+
+#: includes/bisk-settings-page.php:202
+msgid "Shortcodes"
+msgstr ""
+
+#: includes/bisk-settings-page.php:205
+msgid "Displays the Opening date in a specific format"
+msgstr ""
+
+#: includes/bisk-settings-page.php:207
+msgid "any php date format string - 'Default = 'Y-m-d'"
+msgstr ""
+
+#: includes/bisk-settings-page.php:211
+msgid "Displays the date of the opening of the season"
+msgstr ""
+
+#: includes/bisk-settings-page.php:213
+msgid "If the opening date has already passed will return - \"We opened on DAYOFWEEK, MONTH DATE for the YEAR Season\""
+msgstr ""
+
+#: includes/bisk-settings-page.php:214
+msgid "If the opening date has NOT passed will return - \"We will open on DAYOFWEEK, MONTH DATE for the YEAR Season\""
+msgstr ""
+
+#: includes/bisk-settings-page.php:218
+msgid "Displays Round Bowen Challenge Information"
+msgstr ""
+
+#: includes/bisk-settings-page.php:220 includes/bisk-settings-page.php:221
+#: includes/bisk-settings-page.php:222 includes/bisk-settings-page.php:223
+msgid "Default"
+msgstr ""
+
+#: includes/bisk-settings-page.php:222
+msgid "... If 'true' will return the regular, early or late price ONLY"
+msgstr ""
+
+#: includes/bisk-settings-page.php:223
+msgid "... If 'true' will return the Round Bowen Challenge number ONLY"
+msgstr ""
+
+#: includes/bisk-settings-page.php:227
+msgid "Displays Tour Costs"
+msgstr ""
+
+#: includes/bisk-settings-page.php:250
+msgid "Displays the dates of the Full Moon Tours"
+msgstr ""
+
+#: includes/bisk-settings-page.php:251
+msgid "Displays the dates of the Junior Skills Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:253
+msgid "Displays the dates of the Summer Camp"
+msgstr ""
+
+#: includes/bisk-settings-page.php:259
+msgid "Displays the costs of the lessons"
+msgstr ""
+
+#: includes/bisk-settings-page.php:278
+msgid "Actions"
+msgstr ""
+
+#: includes/bisk-settings-page.php:297
+msgid "Filters"
+msgstr ""
+
+#: includes/bisk-settings-page.php:309
+msgid "Remove Shortcode"
+msgstr ""
+
+#: includes/bisk-settings-page.php:312
+msgid "// Do something with the instance of the handler"
+msgstr ""
+
+#: includes/bisk-settings-page.php:337
+msgid "Opening Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:346
+msgid "Opening date for the season"
+msgstr ""
+
+#: includes/bisk-settings-page.php:351
+msgid "Closing Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:360
+msgid "Closing date for the season"
+msgstr ""
+
+#: includes/bisk-settings-page.php:365
+msgid "Full Moon Dates:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:374
+msgid "Full Moon dates for the season"
+msgstr ""
+
+#: includes/bisk-settings-page.php:379
+msgid "Junior Skills Camp Start Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:392
+msgid "Junior Skills Camp End Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:405
+msgid "Summer Camp #1 Start Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:418
+msgid "Summer Camp #1 End Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:431
+msgid "Summer Camp #2 Start Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:444
+msgid "Summer Camp #2 End Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:457
+msgid "Summer Camp #3 Start Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:470
+msgid "Summer Camp #3 End Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:483
+msgid "Summer Camp #4 Start Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:496
+msgid "Summer Camp #4 End Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:509
+msgid "Summer Camp #5 Start Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:522
+msgid "Summer Camp #5 End Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:535
+msgid "Summer Camp #6 Start Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:548
+msgid "Summer Camp #6 End Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:568
+msgid "Shore Line Tour Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:584
+msgid "Full Moon Tour Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:600
+msgid "Sunset Tour Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:616
+msgid "Pasley Island Tour Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:632
+msgid "Half Island Tour Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:648
+msgid "Howe Sound 2 Day Tour Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:664
+msgid "Howe Sound 3 Day Tour Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:680
+msgid "Howe Sound 4 Day Tour Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:696
+msgid "Little Paddlers Party ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:712
+msgid "Little Paddlers Additional ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:729
+msgid "Teen Paddlers Party ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:745
+msgid "Teen Paddlers Additional ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:762
+msgid "Adult Paddlers Party ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:778
+msgid "Adult Paddlers Additional ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:795
+msgid "Basic Sea Kayaking Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:811
+msgid "Intro to Strokes Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:827
+msgid "Capsize Recovery Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:843
+msgid "Stand Up Paddle Board Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:859
+msgid "Stand Up Paddle Board Yoga per hour Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:875
+msgid "Junior Skills Camp Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:891
+msgid "Kids Summer Camp Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:907
+msgid "Sea Kayak Basic Skills Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:923
+msgid "Sea Kayak Level 1 Cost ($):"
+msgstr ""
+
+#: includes/bisk-settings-page.php:946
+msgid "Annual Round Bowen Challenge Number:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:955
+msgid "Number for the Annual Round Bowen Challenge"
+msgstr ""
+
+#: includes/bisk-settings-page.php:961
+msgid "Round Bowen Challenge Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:975
+msgid "Round Bowen Challenge Regular Price:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:989
+msgid "Round Bowen Challenge Early Bird Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:1003
+msgid "Round Bowen Challenge Early Bird Price:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:1017
+msgid "Round Bowen Challenge Late Registration Date:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:1031
+msgid "Round Bowen Challenge Late Price:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:1057
+msgid "Show Closed Notification:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:1065
+msgid "Show closed notification at the top of the page"
+msgstr ""
+
+#: includes/bisk-settings-page.php:1072
+msgid "Closed Notification Header:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:1086
+msgid "Closed Notification to be displayed on the top of the page:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:1108
+msgid "Enable Debug:"
+msgstr ""
+
+#: includes/bisk-settings-page.php:1116
+msgid "Enable debugging of the plugin and theme"
 msgstr ""

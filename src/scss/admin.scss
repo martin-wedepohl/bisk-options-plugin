@@ -9,3 +9,16 @@
 .hide-last-button button:last-of-type {
     display: none;
 }
+
+ul.info {
+    list-style: disc;
+    margin-left: 15px;
+    > li > ul {
+        list-style: square;
+        margin-left: 30px;
+        > li > ul {
+            list-style: circle;
+            margin-left: 30px;
+        }
+    }
+}
