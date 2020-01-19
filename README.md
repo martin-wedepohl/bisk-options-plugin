@@ -33,7 +33,10 @@ Of course! This plugin is open sourced on Martin Wedepohl GitHub. You can find t
 
 ## Changelog ##
 
-### 2020-01-18 version 0.1.3 ###
+### 2020-01-18 version 0.1.5 ###
+* Actually update the plugin version in the config file
+
+### 2020-01-18 version 0.1.4 ###
 * Formatting changes to README.md
 
 ### 2020-01-18 version 0.1.3 ###
