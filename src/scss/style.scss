@@ -38,3 +38,58 @@ input[type="checkbox"] {
 .tab-link a {
     text-transform:uppercase;
 }
+
+.bisk-notification {
+    > h3 {
+        font-weight: 900;
+        color: black;
+        text-transform: uppercase;
+    }
+    position: absolute;
+    top: 140px;
+    z-index: 1000;
+    background: red;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top:20px;
+}
+
+.admin-bar {
+    > .bisk-notification {
+        top: 185px;
+    }
+}
+
+@media only screen and (min-width: 618px) {
+    .bisk-notification {
+        top: 140px;
+    }
+    .admin-bar {
+        > .bisk-notification {
+            top: 186px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .bisk-notification {
+        top: 117px;
+    }
+    .admin-bar {
+        > .bisk-notification {
+            top: 163px;
+        }
+    }
+}
+
+@media only screen and (min-width: 783px) {
+    .bisk-notification {
+        top: 117px;
+    }
+    .admin-bar {
+        > .bisk-notification {
+            top: 149px;
+        }
+    }
+}

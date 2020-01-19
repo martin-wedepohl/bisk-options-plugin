@@ -82,6 +82,9 @@ class BISKOptions {
                 BISKConfig::ROUND_BOWEN_CHALLENGE_REGULAR_PRICE => '',
                 BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_PRICE => '',
                 BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_PRICE => '',
+                BISKConfig::BISK_SHOW_NOTIFICATION => false,
+                BISKConfig::BISK_NOTIFICATION_HEADER => '',
+                BISKConfig::BISK_NOTIFICATION => '',
                 BISKConfig::BISK_DEBUG => false
             ],
             self::$options
@@ -135,6 +138,9 @@ class BISKOptions {
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_REGULAR_PRICE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_REGULAR_PRICE]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_PRICE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_EARLY_BIRD_PRICE]);
         self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_PRICE] = esc_js(self::$options[BISKConfig::ROUND_BOWEN_CHALLENGE_LATE_PRICE]);
+        self::$options[BISKConfig::BISK_SHOW_NOTIFICATION] = esc_js(self::$options[BISKConfig::BISK_SHOW_NOTIFICATION]);
+        self::$options[BISKConfig::BISK_NOTIFICATION_HEADER] = esc_js(self::$options[BISKConfig::BISK_NOTIFICATION_HEADER]);
+        self::$options[BISKConfig::BISK_NOTIFICATION] = esc_js(self::$options[BISKConfig::BISK_NOTIFICATION]);
         self::$options[BISKConfig::BISK_DEBUG] = esc_js(self::$options[BISKConfig::BISK_DEBUG]);
     }
 

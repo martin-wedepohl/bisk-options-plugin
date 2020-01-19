@@ -7,7 +7,7 @@
  * types and shortcodes required by the BISK website.
  * Author: Martin Wedepohl <martin@wedepohlengineering.com>
  * Author URI: https://wedepohlengineering.com
- * Version: 0.1.2
+ * Version: 0.1.3
  * Text Domain: bisk-options-plugin
  */
 /*
@@ -43,6 +43,44 @@ use BISKPlugin\Includes\BISKSettingsPage;
  */
 class BISKOptionsPlugin {
 
+    private function addNotification() {
+
+        $enableNotification = BISKOptions::getOption(BISKConfig::BISK_SHOW_NOTIFICATION);
+
+        if(1 == $enableNotification) {
+            ob_start();
+            add_action('shutdown', function() {
+                if ( is_admin() ) {
+                    return;
+                }
+                $final = '';
+                $levels = ob_get_level();
+                for ($i = 0; $i < $levels; $i++){
+                    $final .= ob_get_clean();
+                }
+                echo apply_filters('final_output', $final);
+            }, 0);
+            
+            add_filter('final_output', function($output) {  
+                if ( is_admin() ) {
+                    return;
+                }
+                $header = BISKOptions::getOption(BISKConfig::BISK_NOTIFICATION_HEADER);
+                $notification = BISKOptions::getOption(BISKConfig::BISK_NOTIFICATION);
+                $notification = str_replace('\n', '<br />', $notification);
+                $after_body = apply_filters('after_body','', $header, $notification);
+                $output = preg_replace("/(\<body.*\>)/", "$1".$after_body, $output);
+                return $output;
+            });
+            
+            add_filter('after_body',function($after_body, $header, $notification) {
+                $after_body.='<div class="bisk-notification"><h3>' . $header . '</h3><p>' . $notification . '</p></div>';
+                return $after_body;
+            }, 10, 3);
+        }
+
+    }
+
     /**
      * Plugin constructor
      */
@@ -69,6 +107,8 @@ class BISKOptionsPlugin {
         
         // Display used template in footer
         add_action( 'wp_footer', [$this, 'bisk_which_template_is_loaded'] );
+
+        $this->addNotification();
         
     }
     

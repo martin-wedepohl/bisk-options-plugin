@@ -34,6 +34,7 @@ class BISKConfig {
     const ADMIN_DATE_ID                  = 'bisk_date_section';
     const ADMIN_COST_ID                  = 'bisk_cost_section';
     const ADMIN_ROUND_BOWEN_CHALLENGE_ID = 'bisk_round_bowen_challenge_section';
+    const ADMIN_NOTIFICATION_ID          = 'bisk_notification_section';
     const ADMIN_DEBUG_ID                 = 'bisk_debug_section';
 
     const SETTINGS_KEY                   = 'bisk_config';
@@ -86,6 +87,10 @@ class BISKConfig {
     const ROUND_BOWEN_CHALLENGE_REGULAR_PRICE    = 'round_bowen_challenge_regular_price';
     const ROUND_BOWEN_CHALLENGE_LATE_DATE        = 'round_bowen_challenge_late_date';
     const ROUND_BOWEN_CHALLENGE_LATE_PRICE       = 'round_bowen_challenge_late_price';
+
+    const BISK_SHOW_NOTIFICATION                 = 'bisk_show_notification';
+    const BISK_NOTIFICATION_HEADER               = 'bisk_notification_header';
+    const BISK_NOTIFICATION                      = 'bisk_notification';
             
     const BISK_DEBUG                     = 'bisk_debug';
 

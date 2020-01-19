@@ -881,6 +881,61 @@ class BISKSettingsPage {
         );
 
         add_settings_section(
+                BISKConfig::ADMIN_NOTIFICATION_ID,
+                null,
+                [$this, 'sectionNotificationTitle'],
+                BISKConfig::ADMIN_MENU_SLUG
+        );
+
+        echo '<pre>';
+        print_r(BISKOptions::getOption(BISKConfig::BISK_SHOW_NOTIFICATION));
+        echo '</pre>';
+
+        $checked = ('' === BISKOptions::getOption(BISKConfig::BISK_SHOW_NOTIFICATION)) ? '' : 'checked';
+        add_settings_field(
+                BISKConfig::BISK_SHOW_NOTIFICATION,
+                esc_html__('Show Closed Notification:', BISKConfig::TEXT_DOMAIN),
+                [$this, 'checkboxField'],
+                BISKConfig::ADMIN_MENU_SLUG,
+                BISKConfig::ADMIN_NOTIFICATION_ID,
+                array(
+                    'classes' => '',
+                    'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::BISK_SHOW_NOTIFICATION . ']',
+                    'id' => BISKConfig::BISK_SHOW_NOTIFICATION,
+                    'description' => esc_html__('Show closed notification at the top of the page', BISKConfig::TEXT_DOMAIN),
+                    'checked' => $checked
+                )
+        );
+        
+        add_settings_field(
+            BISKConfig::BISK_NOTIFICATION_HEADER,
+            esc_html__('Closed Notification Header:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_NOTIFICATION_ID,
+            array(
+                'classes' => 'widefat',
+                'value' => BISKOptions::getOption(BISKConfig::BISK_NOTIFICATION_HEADER),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::BISK_NOTIFICATION_HEADER . ']',
+                'id' => BISKConfig::BISK_NOTIFICATION_HEADER
+            )
+        );
+        
+        add_settings_field(
+            BISKConfig::BISK_NOTIFICATION,
+            esc_html__('Closed Notification to be displayed on the top of the page:', BISKConfig::TEXT_DOMAIN),
+            [$this, 'textAreaField'],
+            BISKConfig::ADMIN_MENU_SLUG,
+            BISKConfig::ADMIN_NOTIFICATION_ID,
+            array(
+                'classes' => '',
+                'value' => BISKOptions::getOption(BISKConfig::BISK_NOTIFICATION),
+                'name' => BISKConfig::SETTINGS_KEY . '[' . BISKConfig::BISK_NOTIFICATION . ']',
+                'id' => BISKConfig::BISK_NOTIFICATION
+            )
+        );
+        
+        add_settings_section(
                 BISKConfig::ADMIN_DEBUG_ID,
                 null,
                 [$this, 'sectionDebugTitle'],
@@ -942,6 +997,13 @@ class BISKSettingsPage {
     }
 
     /**
+     * Display the notification sub title for the Options Page.
+     */
+    public function sectionNotificationTitle() {
+        printf('<h3>' . esc_html__('BISK Closed for Season Notification Message', BISKConfig::TEXT_DOMAIN ) . '</h3>');
+    }
+
+    /**
      * Display the date sub title for the Options Page.
      */
     public function sectionDebugTitle() {
@@ -968,6 +1030,36 @@ class BISKSettingsPage {
         
         printf('<input type="text" class="%s" name="%s" id="%s" value="%s" /><span class="description"> %s</span>',
                 $args['classes'], $args['name'], $args['id'], $args['value'], $args['description']
+        );
+    }
+
+    /**
+     * Display a text area field in the form.
+     * 
+     * @param array $args The arguments passed to the function.
+     */
+    public function textAreaField($args) {
+
+        $args = shortcode_atts(
+                array(
+                    'classes'     => '',
+                    'name'        => '',
+                    'id'          => '',
+                    'value'       => '',
+                    'description' => '',
+                    'cols'        => '100',
+                    'rows'        => '4',
+                    'style'       => 'style="font-family:Courier New;"',
+                ),
+                $args
+        );
+
+        $val = str_replace('\n',
+'
+', 
+        $args['value']);
+        printf('<textarea class="%s" name="%s" id="%s" rows="%s" cols="%s" %s>%s</textarea><span class="description"> %s</span>',
+            $args['classes'], $args['name'], $args['id'], $args['rows'], $args['cols'], $args['style'], $val, $args['description']
         );
     }
 
