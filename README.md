@@ -5,7 +5,7 @@ Tags: BISK
 Requires at least: 4.7
 Tested up to: 5.3.2
 Requires PHP: 5.6
-Stable tag: 0.1.6
+Stable tag: 0.1.7
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 ```
@@ -32,6 +32,9 @@ If you get struck, or have any questions, you can email Martin Wedepohl <martin@
 Of course! This plugin is open sourced on Martin Wedepohl GitHub. You can find the code and contribution instructions at https://github.com/martin-wedepohl/bisk-options-plugin.
 
 ## Changelog ##
+
+### 2020-01-18 version 0.1.7 ###
+* FIX: Removed debugging print that was causing server error
 
 ### 2020-01-18 version 0.1.6 ###
 * Added instructions on how to use the plugin

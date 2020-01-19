@@ -1047,10 +1047,6 @@ class BISKSettingsPage {
                 BISKConfig::ADMIN_MENU_SLUG
         );
 
-        echo '<pre>';
-        print_r(BISKOptions::getOption(BISKConfig::BISK_SHOW_NOTIFICATION));
-        echo '</pre>';
-
         $checked = ('' === BISKOptions::getOption(BISKConfig::BISK_SHOW_NOTIFICATION)) ? '' : 'checked';
         add_settings_field(
                 BISKConfig::BISK_SHOW_NOTIFICATION,
