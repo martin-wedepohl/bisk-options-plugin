@@ -51,7 +51,7 @@ defined('ABSPATH') or die;
             </div>
         </li>
         <li class="tab">
-            <input type="radio" name="tabs" checked="checked" id="tab2" />
+            <input type="radio" name="tabs" id="tab2" />
             <label for="tab2"><?php _e('Price', BISKConfig::TEXT_DOMAIN) ?></label>
             <div id="tab-content2" class="content">
                 <h2><?php _e('BISK Price Options', BISKConfig::TEXT_DOMAIN); ?></h2>
@@ -82,7 +82,7 @@ defined('ABSPATH') or die;
             </div>
         </li>
         <li class="tab">
-            <input type="radio" name="tabs" checked="checked" id="tab3" />
+            <input type="radio" name="tabs" id="tab3" />
             <label for="tab3"><?php _e('Round Bowen', BISKConfig::TEXT_DOMAIN) ?></label>
             <div id="tab-content3" class="content">
                 <h2><?php _e('BISK Round Bowen Challenge Options', BISKConfig::TEXT_DOMAIN); ?></h2>
@@ -98,7 +98,7 @@ defined('ABSPATH') or die;
             </div>
         </li>
         <li class="tab">
-            <input type="radio" name="tabs" checked="checked" id="tab4" />
+            <input type="radio" name="tabs" id="tab4" />
             <label for="tab4"><?php _e('Closed Message', BISKConfig::TEXT_DOMAIN) ?></label>
             <div id="tab-content4" class="content">
                 <h2><?php _e('BISK Closed for Season Notification Message', BISKConfig::TEXT_DOMAIN); ?></h2>
@@ -110,7 +110,7 @@ defined('ABSPATH') or die;
             </div>
         </li>
         <li class="tab">
-            <input type="radio" name="tabs" checked="checked" id="tab5" />
+            <input type="radio" name="tabs" id="tab5" />
             <label for="tab5"><?php _e('Debug', BISKConfig::TEXT_DOMAIN) ?></label>
             <div id="tab-content5" class="content">
                 <h2><?php _e('BISK Debug Options', BISKConfig::TEXT_DOMAIN); ?></h2>
@@ -120,7 +120,7 @@ defined('ABSPATH') or die;
             </div>
         </li>
         <li class="tab">
-            <input type="radio" name="tabs" checked="checked" id="tab6" />
+            <input type="radio" name="tabs" id="tab6" />
             <label for="tab6"><?php _e('Shortcodes', BISKConfig::TEXT_DOMAIN) ?></label>
             <div id="tab-content6" class="content">
                 <h2><?php _e('Shortcodes', BISKConfig::TEXT_DOMAIN); ?></h2>
@@ -207,7 +207,7 @@ defined('ABSPATH') or die;
             </div>
         </li>
         <li class="tab">
-            <input type="radio" name="tabs" checked="checked" id="tab7" />
+            <input type="radio" name="tabs" id="tab7" />
             <label for="tab7"><?php _e('Actions', BISKConfig::TEXT_DOMAIN); ?></label>
             <div id="tab-content7" class="content">
                 <h2><?php _e('Actions', BISKConfig::TEXT_DOMAIN); ?></h2>
@@ -232,7 +232,7 @@ defined('ABSPATH') or die;
             </div>
         </li>
         <li class="tab">
-            <input type="radio" name="tabs" checked="checked" id="tab8" />
+            <input type="radio" name="tabs" id="tab8" />
             <label for="tab8"><?php _e('Filters', BISKConfig::TEXT_DOMAIN) ?></label>
             <div id="tab-content8" class="content">
                 <h2><?php _e('Filters', BISKConfig::TEXT_DOMAIN); ?></h2>

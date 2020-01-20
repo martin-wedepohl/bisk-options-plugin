@@ -7,7 +7,7 @@
  * types and shortcodes required by the BISK website.
  * Author: Martin Wedepohl <martin@wedepohlengineering.com>
  * Author URI: https://wedepohlengineering.com
- * Version: 0.1.8
+ * Version: 0.1.9
  * Text Domain: bisk-options-plugin
  */
 /*
@@ -130,8 +130,10 @@ class BISKOptionsPlugin {
         wp_enqueue_style('jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/redmond/jquery-ui.min.css');
 
         // Only include if we are on the instructions page
-        if(BISKConfig::ADMIN_MENU_SLUG . '-info' === $_GET['page']) {
-            wp_enqueue_style('bisk-instructions', plugins_url( 'dist/css/instructions.min.css', __FILE__));
+        if(isset($_GET['page'])) {
+            if(BISKConfig::ADMIN_MENU_SLUG . '-info' === $_GET['page']) {
+                wp_enqueue_style('bisk-instructions', plugins_url( 'dist/css/instructions.min.css', __FILE__));
+            }
         }
 
         // Required scripts

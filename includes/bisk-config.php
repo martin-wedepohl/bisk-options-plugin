@@ -25,7 +25,7 @@ defined('ABSPATH') or die;
  */
 class BISKConfig {
 
-    const PLUGIN_VERSION                 = '0.1.8';
+    const PLUGIN_VERSION                 = '0.1.9';
     const TEXT_DOMAIN                    = 'bisk-options-plugin';
 
     const ADMIN_CAPABILITY               = 'manage_options';
