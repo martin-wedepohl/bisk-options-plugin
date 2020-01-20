@@ -33,7 +33,12 @@ Of course! This plugin is open sourced on Martin Wedepohl GitHub. You can find t
 
 ## Changelog ##
 
-### 2020-01-18 version 0.1.7 ###
+### 2020-01-19 version 0.1.8 ###
+* Enhancement: Minor formatting change to bisk_opening_date shortcode
+* Enhancement: Added information link from plugins page
+* Enhancement: Use tabs for information page
+
+### 2020-01-19 version 0.1.7 ###
 * FIX: Removed debugging print that was causing server error
 
 ### 2020-01-18 version 0.1.6 ###

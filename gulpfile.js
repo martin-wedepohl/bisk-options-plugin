@@ -29,6 +29,7 @@ var baseDir = '../../wp-content/plugins/bisk-options-plugin/';
 
 // Style Sheets
 var adminStyleSRC = 'src/scss/admin.scss';
+var instructionsSRC =   'src/scss/instructions.scss';
 var styleSRC      = 'src/scss/style.scss';
 var datepickerSRC = 'src/scss/jquery-ui.scss';
 var styleURL      = baseDir + 'dist/css/';
@@ -59,7 +60,7 @@ var phpVendorWatch   = 'vendor/**/*.php';
 var languagesWatch   = 'languages/**/*.*';
 
 function css(done) {
-	src([datepickerSRC,styleSRC,adminStyleSRC])
+	src([datepickerSRC,styleSRC,adminStyleSRC,instructionsSRC])
 		.pipe( sass({
 			errLogToConsole: true,
 			outputStyle: 'expanded'

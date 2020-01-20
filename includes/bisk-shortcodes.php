@@ -109,7 +109,7 @@ final class BISKShortCodes {
             } else {
                 $html = 'We will open on ';
             }
-            $html .= date('l, F jS', $opening_time) . ' for the ' . date('Y', $opening_time) . ' Season.';
+            $html .= date('l, F jS', $opening_time) . ' for the ' . date('Y', $opening_time) . ' Season';
         }
 
         do_action('bisk_after_season_opening');
