@@ -405,6 +405,42 @@ final class BISKShortCodes {
 
     }
     
+    /**
+     * Return the cost of something
+     * 
+     * @example [bisk_cost item='full_moon_tour_cost']
+     * 
+     * @return string The cost of the item
+     */
+    public function cost( $atts ) {
+
+        global $wpdb;
+
+        do_action('bisk_before_cost');
+       
+        $html = 'NO COST';
+        $atts = shortcode_atts(
+            [
+                'item' => ''
+            ], $atts, 'bisk_cost'
+        );
+        
+        if('' !== $atts['item']) {
+            $sql = "SELECT m.meta_value FROM wp_posts p INNER JOIN wp_postmeta m ON p.ID=m.post_id WHERE post_type='bisk-costs' AND meta_key='bisk-costs-amount' AND REPLACE(LOWER(post_title), ' ', '_')=%s";
+            $sql_stmt = $wpdb->prepare( $sql, array( $atts['item'] ) );
+            $row = $wpdb->get_row( $sql_stmt );
+            if ( false === is_null( $row ) ) {
+                $html = '$' . $row->meta_value;
+            }
+        }
+
+        do_action('bisk_after_cost');
+        $html = apply_filters('bisk_cost', $html);
+
+        return $html;
+
+    }
+    
     public static function initShortcodes() {
         // Create the shortcodes
         add_shortcode( 'bisk_opening_date', array(new BISKShortCodes, 'opening_date'));
@@ -415,6 +451,7 @@ final class BISKShortCodes {
         add_shortcode( 'bisk_junior_skills_camp_dates', array(new BISKShortCodes, 'junior_skills_camp_dates'));
         add_shortcode( 'bisk_summer_camp_dates', array(new BISKShortCodes, 'summer_camp_dates'));
         add_shortcode( 'bisk_lesson_cost', array(new BISKShortCodes, 'lesson_cost'));
+        add_shortcode( 'bisk_cost', array(new BISKShortCodes, 'cost'));
     }
     
 } // class WEOP_Shortcodes

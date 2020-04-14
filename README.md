@@ -33,6 +33,9 @@ Of course! This plugin is open sourced on Martin Wedepohl GitHub. You can find t
 
 ## Changelog ##
 
+### 2020-04-13 version 0.2.0 ###
+* Enhancement: Use Custom Post Type for costs
+
 ### 2020-01-19 version 0.1.9 ###
 * FIX: Only check one tab in instructions
 * FIX: Ensure that a valid array index is present before using it

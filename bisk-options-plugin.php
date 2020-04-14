@@ -7,7 +7,7 @@
  * types and shortcodes required by the BISK website.
  * Author: Martin Wedepohl <martin@wedepohlengineering.com>
  * Author URI: https://wedepohlengineering.com
- * Version: 0.1.9
+ * Version: 0.2.0
  * Text Domain: bisk-options-plugin
  */
 /*
@@ -32,6 +32,7 @@ defined('ABSPATH') or die;
 
 require_once plugin_dir_path(__FILE__) . 'vendor/autoload.php';
 
+use BISKPlugin\Includes\BISKCosts;
 use BISKPlugin\Includes\BISKConfig;
 use BISKPlugin\Includes\BISKOptions;
 use BISKPlugin\Includes\BISKShortCodes;
@@ -103,7 +104,10 @@ class BISKOptionsPlugin {
         
         // Initialize the Short Codes
         BISKShortCodes::initShortcodes();
-        
+
+        // Add custom post type
+        new BISKCosts();
+
         // Display used template in footer
         add_action( 'wp_footer', [$this, 'bisk_which_template_is_loaded'] );
 

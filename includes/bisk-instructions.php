@@ -51,37 +51,6 @@ defined('ABSPATH') or die;
             </div>
         </li>
         <li class="tab">
-            <input type="radio" name="tabs" id="tab2" />
-            <label for="tab2"><?php _e('Price', BISKConfig::TEXT_DOMAIN) ?></label>
-            <div id="tab-content2" class="content">
-                <h2><?php _e('BISK Price Options', BISKConfig::TEXT_DOMAIN); ?></h2>
-                <ul class="info">
-                    <li><?php _e('Shore Line Tour Cost - Cost of the Shore Line Tour in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Full Moon Tour Cost - Cost of the Full Moon Tour in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Sunset Tour Cost - Cost of the Sunset Tour in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Pasley Island Tour Cost - Cost of the Pasley Island Tour in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Half Island Tour Cost - Cost of the Half Island Tour in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Howe Sound 2 Day Tour Cost - Cost of the Howe Sound 2 Day Tour in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Howe Sound 3 Day Tour Cost - Cost of the Howe Sound 3 Day Tour in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Howe Sound 4 Day Tour Cost - Cost of the Howe Sound 4 Day Tour in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Little Paddlers Party - Cost of the Little Paddlers Party in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Little Paddlers Additional - Cost of the Little Paddlers Additional Party Guests in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Teen Paddlers Party - Cost of the Teen Paddlers Party in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Teen Paddlers Additional - Cost of the Teen Paddlers Additional Party Guests in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Adult Paddlers Party - Cost of the Adult Paddlers Party in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Adult Paddlers Additional - Cost of the Adult Paddlers Additional Party Guests in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Basic Sea Kayaking Cost - Cost of the Basic Sea Kayaking Lesson in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Intro to Strokes Cost - Cost of the Intro to Strokes Lesson in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Capsize Recovery Cost - Cost of the Capsize Recovery Lesson in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Stand Up Paddle Board Cost - Cost of the Stand Up Paddle Board Lesson in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Stand Up Paddle Board Yoga per hour Cost - Cost of the Stand Up Paddle Board Yoga Lesson in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Junior Skills Camp Cost - Cost of the Junior Skills Camp Lesson in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Kids Summer Camp Cost - Cost of the Kids Summer Camp Lesson in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                    <li><?php _e('Sea Kayak Basic Skills Cost - Cost of the Sea Kayak Basic Skills Lesson in dollars', BISKConfig::TEXT_DOMAIN); ?></li>
-                </ul>
-            </div>
-        </li>
-        <li class="tab">
             <input type="radio" name="tabs" id="tab3" />
             <label for="tab3"><?php _e('Round Bowen', BISKConfig::TEXT_DOMAIN) ?></label>
             <div id="tab-content3" class="content">
@@ -148,28 +117,7 @@ defined('ABSPATH') or die;
                         </ul>
                     </li>
                     <li>
-                        <strong>[bisk_tour_cost tour='TOUR']</strong> - <?php _e('Displays Tour Costs', BISKConfig::TEXT_DOMAIN); ?>
-                        <ul>
-                            <li>
-                                <strong>TOUR</strong>
-                                <ul>
-                                    <li>'shore_line_tour_cost'</li>
-                                    <li>'full_moon_tour_cost'</li>
-                                    <li>'sunset_tour_cost'</li>
-                                    <li>'pasley_island_tour_cost'</li>
-                                    <li>'half_island_tour_cost'</li>
-                                    <li>'howe_sound_tour_two_day_cost'</li>
-                                    <li>'howe_sound_tour_three_day_cost'</li>
-                                    <li>'howe_sound_tour_four_day_cost'</li>
-                                    <li>'little_paddlers_party'</li>
-                                    <li>'little_paddlers_additional'</li>
-                                    <li>'teen_paddlers_party'</li>
-                                    <li>'teen_paddlers_additional'</li>
-                                    <li>'adult_paddlers_party'</li>
-                                    <li>'adult_paddlers_additional'</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <strong>[bisk_cost item='ITEM']</strong> - <?php _e('Displays Costs of tours/lessons/etc', BISKConfig::TEXT_DOMAIN); ?>
                     </li>
                     <li><strong>[bisk_full_moon_dates]</strong> - <?php _e('Displays the dates of the Full Moon Tours', BISKConfig::TEXT_DOMAIN); ?></li>
                     <li><strong>[bisk_junior_skills_camp_dates]</strong> - <?php _e('Displays the dates of the Junior Skills Camp', BISKConfig::TEXT_DOMAIN); ?></li>
@@ -177,25 +125,6 @@ defined('ABSPATH') or die;
                         <strong>[bisk_summer_camp_dates week='WEEK']</strong> - <?php _e('Displays the dates of the Summer Camp', BISKConfig::TEXT_DOMAIN); ?>
                         <ul>
                             <li><strong>WEEK</strong> = '1' to '6'</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>[bisk_lesson_cost lesson='LESSON']</strong> - <?php _e('Displays the costs of the lessons', BISKConfig::TEXT_DOMAIN); ?>
-                        <ul>
-                            <li>
-                                <strong>LESSON</strong>
-                                <ul>
-                                    <li>'basic_sea_kayaking_cost'</li>
-                                    <li>'intro_to_strokes_cost'</li>
-                                    <li>'capsize_recovery_cost'</li>
-                                    <li>'stand_up_paddle_board_cost'</li>
-                                    <li>'stand_up_paddle_board_yoga_cost'</li>
-                                    <li>'junior_skills_camp_cost'</li>
-                                    <li>'kids_summer_camps_cost'</li>
-                                    <li>'sea_kayak_basic_skills_cost'</li>
-                                    <li>'sea_kayak_level_1_cost'</li>
-                                </ul>
-                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -218,16 +147,14 @@ defined('ABSPATH') or die;
                     <li>bisk_after_season_opening</li>
                     <li>bisk_before_round_bowen_challenge</li>
                     <li>bisk_after_round_bowen_challenge</li>
-                    <li>bisk_before_tour_cost</li>
-                    <li>bisk_after_tour_cost</li>
+                    <li>bisk_before_cost</li>
+                    <li>bisk_after_cost</li>
                     <li>bisk_before_full_moon_dates</li>
                     <li>bisk_after_full_moon_dates</li>
                     <li>bisk_before_junior_skills_camp_dates</li>
                     <li>bisk_after_junior_skills_camp_dates</li>
                     <li>bisk_before_summer_camp_dates</li>
                     <li>bisk_after_summer_camp_dates</li>
-                    <li>bisk_before_lesson_cost</li>
-                    <li>bisk_after_lesson_cost</li>
                 </ul>
             </div>
         </li>
@@ -241,11 +168,10 @@ defined('ABSPATH') or die;
                     <li>bisk_opening_date</li>
                     <li>bisk_season_opening</li>
                     <li>bisk_round_bowen_challenge</li>
-                    <li>bisk_tour_cost</li>
+                    <li>bisk_cost</li>
                     <li>bisk_full_moon_dates</li>
                     <li>bisk_junior_skills_camp_dates</li>
                     <li>bisk_summer_camp_dates</li>
-                    <li>bisk_lesson_cost</li>
                 </ul>
             </div>
         </li>
