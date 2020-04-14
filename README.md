@@ -33,6 +33,9 @@ Of course! This plugin is open sourced on Martin Wedepohl GitHub. You can find t
 
 ## Changelog ##
 
+### 2020-04-13 version 0.2.1 ###
+* Removed all the redundant code with the lessons/tour costs
+
 ### 2020-04-13 version 0.2.0 ###
 * Enhancement: Use Custom Post Type for costs
 

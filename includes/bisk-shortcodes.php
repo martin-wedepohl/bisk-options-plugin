@@ -223,37 +223,6 @@ final class BISKShortCodes {
     }
 
     /**
-     * Return the cost of a tour
-     * 
-     * @example [bisk_tour_cost tour='full_moon_tour_cost']
-     * 
-     * @return string The season opening format
-     */
-    public function tour_cost( $atts ) {
-
-        do_action('bisk_before_tour_cost');
-       
-        $html = 'NO COST';
-        $atts = shortcode_atts(
-            [
-                'tour' => ''
-            ], $atts, 'bisk_tour_cost'
-        );
-        
-        if('' !== $atts['tour']) {
-            $tour_cost = BISKOptions::getOption($atts['tour']);
-            $html = ('' === $tour_cost) ? '0' : $tour_cost;
-        }
-        $html = '$' . $html;
-
-        do_action('bisk_after_tour_cost');
-        $html = apply_filters('bisk_tour_cost', $html);
-
-        return $html;
-
-    }
-    
-    /**
      * Return the full moon dates for the season
      * 
      * @example [bisk_full_moon_dates]
@@ -375,37 +344,6 @@ final class BISKShortCodes {
     }
 
     /**
-     * Return the cost of a lesson
-     * 
-     * @example [bisk_lesson_cost lesson='basic_sea_kayaking']
-     * 
-     * @return string The cost of a lesson
-     */
-    public function lesson_cost( $atts ) {
-
-        do_action('bisk_before_lesson_cost');
-
-        $html = 'NO COST';
-        $atts = shortcode_atts(
-            [
-                'lesson' => ''
-            ], $atts, 'bisk_lesson_cost'
-        );
-        
-        if('' !== $atts['lesson']) {
-            $tour_cost = BISKOptions::getOption($atts['lesson']);
-            $html = ('' === $tour_cost) ? '0' : $tour_cost;
-        }
-        $html = '$' . $html;
-
-        do_action('bisk_after_lesson_cost');
-        $html = apply_filters('bisk_lesson_cost', $html);
-
-        return $html;
-
-    }
-    
-    /**
      * Return the cost of something
      * 
      * @example [bisk_cost item='full_moon_tour_cost']
@@ -446,11 +384,9 @@ final class BISKShortCodes {
         add_shortcode( 'bisk_opening_date', array(new BISKShortCodes, 'opening_date'));
         add_shortcode( 'bisk_season_opening', array(new BISKShortCodes, 'season_opening'));
         add_shortcode( 'bisk_round_bowen_challenge', array(new BISKShortCodes, 'round_bowen_challenge'));
-        add_shortcode( 'bisk_tour_cost', array(new BISKShortCodes, 'tour_cost'));
         add_shortcode( 'bisk_full_moon_dates', array(new BISKShortCodes, 'full_moon_dates'));
         add_shortcode( 'bisk_junior_skills_camp_dates', array(new BISKShortCodes, 'junior_skills_camp_dates'));
         add_shortcode( 'bisk_summer_camp_dates', array(new BISKShortCodes, 'summer_camp_dates'));
-        add_shortcode( 'bisk_lesson_cost', array(new BISKShortCodes, 'lesson_cost'));
         add_shortcode( 'bisk_cost', array(new BISKShortCodes, 'cost'));
     }
     
