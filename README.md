@@ -3,9 +3,9 @@
 Contributors: martin-wedepohl
 Tags: BISK
 Requires at least: 4.7
-Tested up to: 5.3.2
+Tested up to: 5.4.1
 Requires PHP: 5.6
-Stable tag: 0.1.9
+Stable tag: 0.2.2
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 ```
@@ -32,6 +32,10 @@ If you get struck, or have any questions, you can email Martin Wedepohl <martin@
 Of course! This plugin is open sourced on Martin Wedepohl GitHub. You can find the code and contribution instructions at https://github.com/martin-wedepohl/bisk-options-plugin.
 
 ## Changelog ##
+
+### 2020-04-13 version 0.2.2 ###
+* Added disable WordPress Block Editor Fullscreen mode (default on in WordPress 5.4)
+* Use database prefix rather than hard coded prefix
 
 ### 2020-04-13 version 0.2.1 ###
 * Removed all the redundant code with the lessons/tour costs
