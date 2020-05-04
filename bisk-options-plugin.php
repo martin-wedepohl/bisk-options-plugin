@@ -12,7 +12,7 @@
  * types and shortcodes required by the BISK website.
  * Author: Martin Wedepohl <martin@wedepohlengineering.com>
  * Author URI: https://wedepohlengineering.com
- * Version: 0.2.2
+ * Version: 0.2.3
  * Text Domain: bisk-options-plugin
  *
  * Copyright (C) 2019-present, Wedepohl Engineering
@@ -44,9 +44,27 @@ use BISKPlugin\Includes\BISKSettingsPage;
 class BISKOptionsPlugin {
 
 	/**
+	 * Check if the current page is the login page.
+	 */
+	private function is_wplogin() {
+
+		if ( false === stripos( $_SERVER['SCRIPT_NAME'], strrchr( wp_login_url(), '/' ) ) ) {
+			return false;
+		} else {
+			return true;
+		}
+
+	}
+
+	/**
 	 * Add notification message to the website
 	 */
 	private function addNotification() {
+
+		if ( $this->is_wplogin() ) {
+			// Don't display the notification on the login page.
+			return;
+		}
 
 		$enableNotification = BISKOptions::getOption( BISKConfig::BISK_SHOW_NOTIFICATION );
 

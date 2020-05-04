@@ -5,7 +5,7 @@ Tags: BISK
 Requires at least: 4.7
 Tested up to: 5.4.1
 Requires PHP: 5.6
-Stable tag: 0.2.2
+Stable tag: 0.2.3
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 ```
@@ -33,7 +33,10 @@ Of course! This plugin is open sourced on Martin Wedepohl GitHub. You can find t
 
 ## Changelog ##
 
-### 2020-04-13 version 0.2.2 ###
+### 2020-05-03 version 0.2.3 ###
+* Don't display notification on the login page
+
+### 2020-05-03 version 0.2.2 ###
 * Added disable WordPress Block Editor Fullscreen mode (default on in WordPress 5.4)
 * Use database prefix rather than hard coded prefix
 
